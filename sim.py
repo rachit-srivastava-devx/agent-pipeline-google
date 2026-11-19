@@ -1,6 +1,6 @@
 """Discrete-time simulation of admission + degradation ladder. Toy parameters, NOT a load test.
-Invariants checked every tick: tests never skipped, verifier never skipped, tier never lowered,
-admitted model calls/min never exceed 70% of the lowest live limit, ledger cap never exceeded."""
+Invariants checked every tick (only these two): admitted model calls/min never exceed 70% of the lowest live limit, ledger cap never exceeded.
+Not modelled: hotfix exemption, verifier, risk tiers, tests."""
 import random
 random.seed(7)
 TICKS=240            # minutes
